@@ -1,136 +1,131 @@
-
-html{
+html {
     font-size: 15px;
     background-color: $bg;
     margin: 0;
 }
 
-body{
-    margin:0;
+body {
+    margin: 0;
 }
-
 
 //NAVBAR
-
- nav{
-     ul{
-         margin: 0 auto;
-         width: 100%;
-         justify-content: center;
-         align-items: center;
-     }
-  
-  
-     li{
+nav {
+    ul {
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    li {
         font-family: 'Gotham', Helvetica, sans-serif;
-        font-size:.73rem;
-        
+        font-size: .73rem;
         font-weight: 600;
         list-style: none;
-
-        margin:20px;
-
-        a{
+        margin: 20px;
+        a {
             text-decoration: none;
-            color:$gray;
+            color: $gray;
         }
-
     }
-
-    img{
+    img {
         max-width: .73rem;
     }
-
-    .row{
+    .row {
         margin: 0 auto;
-
+        padding: 0;
     }
-
     display: flex;
- 
 }
 
-
-
-
-.brand{
-
+.brand {
     margin: 20px 0 80px;
-   
-
-    .row{
+    .row {
         margin: 0;
         padding: 0;
-       
-        .col{
+        .col {
             padding: 0;
         }
     }
-
-    p{
-        font-family : Baskerville;
-        font-style : italic;
-        font-size : 1rem;
+    p {
+        font-family: Baskerville;
+        font-style: italic;
+        font-size: 1rem;
         line-height: 1.1rem;
         text-align: center;
-        color : #B6B2AD;
+        color: #B6B2AD;
         margin: 0;
         display: flex;
-     
     }
-
-    img{
+    img {
         max-width: 100%;
     }
-
     display: flex;
     justify-content: space-between;
     align-items:center;
 }
 
-
-
-section{
-    
-       h1{
-    
-           font-family : Gotham;
-           font-weight : bold;
-           font-size : 40px;
-           letter-spacing : 4px;
-           color : $red;
-           text-align: center ;
-         
-       }
-    
-    hr{
-        border:solid #726860 1px;
-        width: 15%;
-        margin: 50px auto ;
+section {
+    h1 {
+        font-family: Gotham, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 4px;
+        color: $red;
+        text-align: center;
     }
-
+    hr {
+        border: solid rgb(236, 236, 236) 1px;
+        width: 15%;
+        margin: 50px auto;
+    }
+    h2 {
+        font-family: Gotham, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 31px;
+        letter-spacing: 3px;
+        color: $bg;
+        background-color: $red;
+        text-align: center;
+        padding: 20px;
+        width: 65%;
+        margin: 0 auto;
+    }
+    p {
+        font-family: Baskerville;
+        font-size: 1.6rem;
+        color: $gray;
+        text-align: center;
+        margin: 80px 0;
+    }
+    .distanza {
+        margin-bottom: 80px;
+    }
+    .padd {
+        margin-top: 100px;
+    }
+   .relative{
+       position: relative;
+       top: 50%;
+   }
 }
 
-#storia{
-    margin:180px auto;
-    p{
-        font-family : Baskerville;
-        font-size : 1.6rem;
-        color : $gray;
+#storia {
+    margin: 180px auto;
+    p {
+        font-family: Baskerville;
+        font-size: 1.6rem;
+        color: $gray;
         text-align: center;
         margin: 20px 0;
     }
 }
 
-
-#giornata{
+#giornata {
     margin: 180px 0;
+    justify-content: space-around;
 }
 
-
 //SLIDER
-
-
 .slider {
     position: relative;
     width: 100%;
@@ -139,7 +134,7 @@ section{
         position: absolute;
         padding: 0 10%;
         top: 350px;
-        color: #fff;     
+        color: #fff;
         width: 45%;
         left: 18%;
     }
@@ -180,16 +175,11 @@ section{
     }
 }
 
-
-
 //SLIDER2
-
-
 .slider2 {
     position: relative;
     width: 100%;
     transition: all .3s ease;
-
     figure {
         height: 896px;
         overflow: hidden;

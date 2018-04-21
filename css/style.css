@@ -277,6 +277,7 @@ nav img {
 
 nav .row {
   margin: 0 auto;
+  padding: 0;
 }
 
 .brand {
@@ -311,7 +312,7 @@ nav .row {
 }
 
 section h1 {
-  font-family: Gotham;
+  font-family: Gotham, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 40px;
   letter-spacing: 4px;
@@ -320,9 +321,43 @@ section h1 {
 }
 
 section hr {
-  border: solid #726860 1px;
+  border: solid #ececec 1px;
   width: 15%;
   margin: 50px auto;
+}
+
+section h2 {
+  font-family: Gotham, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 31px;
+  letter-spacing: 3px;
+  color: #fffcf1;
+  background-color: #A90E1E;
+  text-align: center;
+  padding: 20px;
+  width: 65%;
+  margin: 0 auto;
+}
+
+section p {
+  font-family: Baskerville;
+  font-size: 1.6rem;
+  color: #726860;
+  text-align: center;
+  margin: 80px 0;
+}
+
+section .distanza {
+  margin-bottom: 80px;
+}
+
+section .padd {
+  margin-top: 100px;
+}
+
+section .relative {
+  position: relative;
+  top: 50%;
 }
 
 #storia {
@@ -339,6 +374,7 @@ section hr {
 
 #giornata {
   margin: 180px 0;
+  justify-content: space-around;
 }
 
 .slider {
