@@ -22,9 +22,13 @@ nav {
         font-weight: 600;
         list-style: none;
         margin: 20px;
+        @media screen and (max-width: $mobile) {
+            margin: 20px 10px;
+        }
         a {
             text-decoration: none;
             color: $gray;
+            margin: 20px 0
         }
     }
     img {
@@ -37,6 +41,10 @@ nav {
     display: flex;
 }
 
+hr {
+    margin: 0;
+}
+
 .brand {
     margin: 20px 0 80px;
     .row {
@@ -47,7 +55,7 @@ nav {
         }
     }
     p {
-        font-family: Baskerville;
+        font-family: Baskerville, 'Times New Roman', Times, serif;
         font-style: italic;
         font-size: 1rem;
         line-height: 1.1rem;
@@ -55,6 +63,13 @@ nav {
         color: #B6B2AD;
         margin: 0;
         display: flex;
+        @media screen and (max-width: $mobile) {
+            justify-content: center;
+            margin: 40px 0;
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+        }
+       
     }
     img {
         max-width: 100%;
@@ -72,95 +87,128 @@ section {
         letter-spacing: 4px;
         color: $red;
         text-align: center;
-    }
+        margin-bottom: 20px;
+     
+}
     hr {
         border: solid rgb(236, 236, 236) 1px;
         width: 15%;
-        margin: 50px auto;
+        margin: 30px auto 50px;
+        @media screen and (max-width: $mobile) {
+            margin: 30px auto 0px;
+        }
+    }
+    .menu {
+        @media screen and (max-width: $mobile) {
+            margin-top: -50px;
+            margin-bottom: 30px;
+        }
     }
     h2 {
         font-family: Gotham, Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 31px;
+        font-size: 20px;
         letter-spacing: 3px;
         color: $bg;
         background-color: $red;
         text-align: center;
-        padding: 20px;
+        padding: 15px;
         width: 65%;
         margin: 0 auto;
     }
     p {
-        font-family: Baskerville;
-        font-size: 1.6rem;
+        font-family: Baskerville, 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
         color: $gray;
         text-align: center;
-        margin: 80px 0;
+        margin: 45px 0 100px;
+        line-height: 1.8rem;
     }
     .distanza {
         margin-bottom: 80px;
     }
     .padd {
-        margin-top: 100px;
+        margin-top: 50px;
+        @media screen and (max-width: $mobile) {
+            margin-top: 0;
     }
-   .relative{
-       position: relative;
-       top: 50%;
-   }
+    }
+    .relative {
+        position: relative;
+        top: 50%;
+        margin: 0;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        color: $red;
+        font-size: 3rem;
+        text-align: center;
+        @media screen and (max-width: $mobile) {
+            font-size: 2.5rem;
+        }
+    }
 }
 
 #storia {
     margin: 180px auto;
+    @media screen and (max-width: $mobile) {
+        margin: 30px 0;
+    }
     p {
-        font-family: Baskerville;
-        font-size: 1.6rem;
+        font-family: Baskerville, 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
         color: $gray;
         text-align: center;
         margin: 20px 0;
+        line-height: 1.8rem;
     }
 }
 
 #giornata {
     margin: 180px 0;
-    justify-content: space-around;
-}
-
-#contatti{
-
-    
-
-    p{
-        font-family : Gotham, Helvetica, sans-serif;
-        font-weight : bold;
-        font-size : 0.8rem;
-        color : #726860;
-        text-align: center ;
-        margin: 30px 0 0 0;       
+    justify-content: space-evenly;
+    @media screen and (max-width: $mobile) {
+        margin: 30px 0;
     }
-
-    hr{margin: 20px auto}
-
-    span{
-      
-
-        p{ 
-            font-family : Baskerville;
-            font-style : italic;
+}
+header{
+    margin-bottom: 50px;
+    @media screen and (max-width: $mobile) {
+        margin-bottom:  0;
+    }
+}
+#contatti {
+    p {
+        font-family: Gotham, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 0.8rem;
+        color: #726860;
+        text-align: center;
+        margin: 30px 0 0 0;
+    }
+    hr {
+        margin:30px auto 50px
+    }
+    span {
+        p {
+            font-family: Baskerville, 'Times New Roman', Times, serif;
+            font-style: italic;
             font-weight: 300;
-            font-size : 1rem;
-            color : #B6B2AD;
+            font-size: 1rem;
+            color: #B6B2AD;
             text-align: center;
-            line-height: 1.3rem;}
+            line-height: 1.3rem;
+            @media screen and (max-width: $mobile) {
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+            }
             margin:0;
+        }
+        header {
+            margin: 80px auto;
+        }
     }
-
-
-    header{
-        margin:80px auto;
-    }
-}
-
-
+} 
 
 
 
@@ -203,19 +251,14 @@ section {
             font-size: 56px;
             padding: 0 .5rem;
             margin: 0 12px;
-            
             &:hover,
             &:focus,
             &.active {
                 opacity: 1;
             }
-          
-            
         }
     }
-}
-
-//SLIDER2
+} //SLIDER2
 .slider2 {
     position: relative;
     width: 100%;
@@ -251,10 +294,58 @@ section {
             &.active {
                 opacity: 1;
             }
-
-
-
-            
         }
+    }
+}
+
+footer#main-footer {
+    width: 100%;
+    min-height: 15rem;
+    background: $red;
+    margin-top: 100px;
+}
+
+footer {
+    .row {
+        margin: 10px auto;
+        padding: 0;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    ul {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        max-width: .73rem;
+    }
+    li {
+        font-family: 'Gotham', Helvetica, sans-serif;
+        font-size: .73rem;
+        font-weight: 600;
+        list-style: none;
+        margin: 20px;
+        @media screen and (max-width: $mobile) {
+            margin: 10px;
+        }
+        :hover {
+            color: $bg;
+            transition: .3s;
+        }
+        a {
+            text-decoration: none;
+            color: $darkred;
+            img {
+                height: 50px;
+                max-width: 100%;
+            }
+        }
+    }
+    p {
+        font-family: 'Gotham', Helvetica, sans-serif;
+        font-size: .6rem;
+        color: $darkred;
+        margin: 20px 0;
     }
 }

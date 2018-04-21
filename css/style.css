@@ -266,9 +266,16 @@ nav li {
   margin: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  nav li {
+    margin: 20px 10px;
+  }
+}
+
 nav li a {
   text-decoration: none;
   color: #726860;
+  margin: 20px 0;
 }
 
 nav img {
@@ -278,6 +285,10 @@ nav img {
 nav .row {
   margin: 0 auto;
   padding: 0;
+}
+
+hr {
+  margin: 0;
 }
 
 .brand {
@@ -297,7 +308,7 @@ nav .row {
 }
 
 .brand p {
-  font-family: Baskerville;
+  font-family: Baskerville, 'Times New Roman', Times, serif;
   font-style: italic;
   font-size: 1rem;
   line-height: 1.1rem;
@@ -305,6 +316,15 @@ nav .row {
   color: #B6B2AD;
   margin: 0;
   display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .brand p {
+    justify-content: center;
+    margin: 40px 0;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
 }
 
 .brand img {
@@ -318,33 +338,48 @@ section h1 {
   letter-spacing: 4px;
   color: #A90E1E;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 section hr {
   border: solid #ececec 1px;
   width: 15%;
-  margin: 50px auto;
+  margin: 30px auto 50px;
+}
+
+@media screen and (max-width: 600px) {
+  section hr {
+    margin: 30px auto 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section .menu {
+    margin-top: -50px;
+    margin-bottom: 30px;
+  }
 }
 
 section h2 {
   font-family: Gotham, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 31px;
+  font-size: 20px;
   letter-spacing: 3px;
   color: #fffcf1;
   background-color: #A90E1E;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   width: 65%;
   margin: 0 auto;
 }
 
 section p {
-  font-family: Baskerville;
-  font-size: 1.6rem;
+  font-family: Baskerville, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
   color: #726860;
   text-align: center;
-  margin: 80px 0;
+  margin: 45px 0 100px;
+  line-height: 1.8rem;
 }
 
 section .distanza {
@@ -352,29 +387,71 @@ section .distanza {
 }
 
 section .padd {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  section .padd {
+    margin-top: 0;
+  }
 }
 
 section .relative {
   position: relative;
   top: 50%;
+  margin: 0;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  color: #A90E1E;
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  section .relative {
+    font-size: 2.5rem;
+  }
 }
 
 #storia {
   margin: 180px auto;
 }
 
+@media screen and (max-width: 600px) {
+  #storia {
+    margin: 30px 0;
+  }
+}
+
 #storia p {
-  font-family: Baskerville;
-  font-size: 1.6rem;
+  font-family: Baskerville, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
   color: #726860;
   text-align: center;
   margin: 20px 0;
+  line-height: 1.8rem;
 }
 
 #giornata {
   margin: 180px 0;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  #giornata {
+    margin: 30px 0;
+  }
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    margin-bottom: 0;
+  }
 }
 
 #contatti p {
@@ -387,24 +464,28 @@ section .relative {
 }
 
 #contatti hr {
-  margin: 20px auto;
-}
-
-#contatti span {
-  margin: 0;
+  margin: 30px auto 50px;
 }
 
 #contatti span p {
-  font-family: Baskerville;
+  font-family: Baskerville, 'Times New Roman', Times, serif;
   font-style: italic;
   font-weight: 300;
   font-size: 1rem;
   color: #B6B2AD;
   text-align: center;
   line-height: 1.3rem;
+  margin: 0;
 }
 
-#contatti header {
+@media screen and (max-width: 600px) {
+  #contatti span p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+}
+
+#contatti span header {
   margin: 80px auto;
 }
 
@@ -499,5 +580,68 @@ section .relative {
 
 .slider2 ol li:hover, .slider2 ol li:focus, .slider2 ol li.active {
   opacity: 1;
+}
+
+footer#main-footer {
+  width: 100%;
+  min-height: 15rem;
+  background: #A90E1E;
+  margin-top: 100px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .row {
+  margin: 10px auto;
+  padding: 0;
+}
+
+footer ul {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  max-width: .73rem;
+}
+
+footer li {
+  font-family: 'Gotham', Helvetica, sans-serif;
+  font-size: .73rem;
+  font-weight: 600;
+  list-style: none;
+  margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  footer li {
+    margin: 10px;
+  }
+}
+
+footer li :hover {
+  color: #fffcf1;
+  transition: .3s;
+}
+
+footer li a {
+  text-decoration: none;
+  color: #840c1e;
+}
+
+footer li a img {
+  height: 50px;
+  max-width: 100%;
+}
+
+footer p {
+  font-family: 'Gotham', Helvetica, sans-serif;
+  font-size: .6rem;
+  color: #840c1e;
+  margin: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
