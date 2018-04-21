@@ -1,0 +1,442 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 45%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.row .col {
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.row .col.s1 {
+  flex: 1 0 8.33333%;
+}
+
+.row .col.s2 {
+  flex: 1 0 16.66667%;
+}
+
+.row .col.s3 {
+  flex: 1 0 25%;
+}
+
+.row .col.s4 {
+  flex: 1 0 33.33333%;
+}
+
+.row .col.s5 {
+  flex: 1 0 41.66667%;
+}
+
+.row .col.s6 {
+  flex: 1 0 50%;
+}
+
+.row .col.s7 {
+  flex: 1 0 58.33333%;
+}
+
+.row .col.s8 {
+  flex: 1 0 66.66667%;
+}
+
+.row .col.s9 {
+  flex: 1 0 75%;
+}
+
+.row .col.s10 {
+  flex: 1 0 83.33333%;
+}
+
+.row .col.s11 {
+  flex: 1 0 91.66667%;
+}
+
+.row .col.s12 {
+  flex: 1 0 100%;
+}
+
+@media screen and (min-width: 736px) {
+  .row .col.sl1 {
+    flex: 0 1 8.33333%;
+  }
+  .row .col.sl2 {
+    flex: 0 1 16.66667%;
+  }
+  .row .col.sl3 {
+    flex: 0 1 25%;
+  }
+  .row .col.sl4 {
+    flex: 0 1 33.33333%;
+  }
+  .row .col.sl5 {
+    flex: 0 1 41.66667%;
+  }
+  .row .col.sl6 {
+    flex: 0 1 50%;
+  }
+  .row .col.sl7 {
+    flex: 0 1 58.33333%;
+  }
+  .row .col.sl8 {
+    flex: 0 1 66.66667%;
+  }
+  .row .col.sl9 {
+    flex: 0 1 75%;
+  }
+  .row .col.sl10 {
+    flex: 0 1 83.33333%;
+  }
+  .row .col.sl11 {
+    flex: 0 1 91.66667%;
+  }
+  .row .col.sl12 {
+    flex: 0 1 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .row .col.m1 {
+    flex: 0 1 8.33333%;
+  }
+  .row .col.m2 {
+    flex: 0 1 16.66667%;
+  }
+  .row .col.m3 {
+    flex: 0 1 25%;
+  }
+  .row .col.m4 {
+    flex: 0 1 33.33333%;
+  }
+  .row .col.m5 {
+    flex: 0 1 41.66667%;
+  }
+  .row .col.m6 {
+    flex: 0 1 50%;
+  }
+  .row .col.m7 {
+    flex: 0 1 58.33333%;
+  }
+  .row .col.m8 {
+    flex: 0 1 66.66667%;
+  }
+  .row .col.m9 {
+    flex: 0 1 75%;
+  }
+  .row .col.m10 {
+    flex: 0 1 83.33333%;
+  }
+  .row .col.m11 {
+    flex: 0 1 91.66667%;
+  }
+  .row .col.m12 {
+    flex: 0 1 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .row .col.ml1 {
+    flex: 0 1 8.33333%;
+  }
+  .row .col.ml2 {
+    flex: 0 1 16.66667%;
+  }
+  .row .col.ml3 {
+    flex: 0 1 25%;
+  }
+  .row .col.ml4 {
+    flex: 0 1 33.33333%;
+  }
+  .row .col.ml5 {
+    flex: 0 1 41.66667%;
+  }
+  .row .col.ml6 {
+    flex: 0 1 50%;
+  }
+  .row .col.ml7 {
+    flex: 0 1 58.33333%;
+  }
+  .row .col.ml8 {
+    flex: 0 1 66.66667%;
+  }
+  .row .col.ml9 {
+    flex: 0 1 75%;
+  }
+  .row .col.ml10 {
+    flex: 0 1 83.33333%;
+  }
+  .row .col.ml11 {
+    flex: 0 1 91.66667%;
+  }
+  .row .col.ml12 {
+    flex: 0 1 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .row .col.l1 {
+    flex: 0 1 8.33333%;
+  }
+  .row .col.l2 {
+    flex: 0 1 16.66667%;
+  }
+  .row .col.l3 {
+    flex: 0 1 25%;
+  }
+  .row .col.l4 {
+    flex: 0 1 33.33333%;
+  }
+  .row .col.l5 {
+    flex: 0 1 41.66667%;
+  }
+  .row .col.l6 {
+    flex: 0 1 50%;
+  }
+  .row .col.l7 {
+    flex: 0 1 58.33333%;
+  }
+  .row .col.l8 {
+    flex: 0 1 66.66667%;
+  }
+  .row .col.l9 {
+    flex: 0 1 75%;
+  }
+  .row .col.l10 {
+    flex: 0 1 83.33333%;
+  }
+  .row .col.l11 {
+    flex: 0 1 91.66667%;
+  }
+  .row .col.l12 {
+    flex: 0 1 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row .fw, .row .col.s1, .row .col.s2, .row .col.s3, .row .col.s4, .row .col.s5, .row .col.s6, .row .col.s7, .row .col.s8, .row .col.s9, .row .col.s10, .row .col.s11, .row .col.s12 {
+    flex-basis: 100%;
+  }
+}
+
+html {
+  font-size: 15px;
+  background-color: #fffcf1;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  font-family: 'Gotham', Helvetica, sans-serif;
+  font-size: .73rem;
+  font-weight: 600;
+  list-style: none;
+  margin: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #726860;
+}
+
+nav img {
+  max-width: .73rem;
+}
+
+nav .row {
+  margin: 0 auto;
+}
+
+.brand {
+  margin: 20px 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand .row {
+  margin: 0;
+  padding: 0;
+}
+
+.brand .row .col {
+  padding: 0;
+}
+
+.brand p {
+  font-family: Baskerville;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  text-align: center;
+  color: #B6B2AD;
+  margin: 0;
+  display: flex;
+}
+
+.brand img {
+  max-width: 100%;
+}
+
+section h1 {
+  font-family: Gotham;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 4px;
+  color: #A90E1E;
+  text-align: center;
+}
+
+section hr {
+  border: solid #726860 1px;
+  width: 15%;
+  margin: 50px auto;
+}
+
+#storia {
+  margin: 180px auto;
+}
+
+#storia p {
+  font-family: Baskerville;
+  font-size: 1.6rem;
+  color: #726860;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#giornata {
+  margin: 180px 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  transition: all .3s ease;
+}
+
+.slider header {
+  position: absolute;
+  padding: 0 10%;
+  top: 350px;
+  color: #fff;
+  width: 45%;
+  left: 18%;
+}
+
+.slider figure {
+  height: 896px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.slider img {
+  max-width: 100%;
+}
+
+.slider ol {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+  list-style: circle;
+}
+
+.slider ol li {
+  cursor: pointer;
+  transition: all .3s ease;
+  color: #fff;
+  opacity: 0.4;
+  font-size: 56px;
+  padding: 0 .5rem;
+}
+
+.slider ol li:hover, .slider ol li:focus, .slider ol li.active {
+  opacity: 1;
+}
+
+.slider ol li:before {
+  content: "\2022";
+}
+
+.slider2 {
+  position: relative;
+  width: 100%;
+  transition: all .3s ease;
+}
+
+.slider2 figure {
+  height: 896px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.slider2 img {
+  max-width: 100%;
+}
+
+.slider2 ol {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+  list-style: circle;
+}
+
+.slider2 ol li {
+  cursor: pointer;
+  transition: all .3s ease;
+  color: #fff;
+  opacity: 0.4;
+  font-size: 56px;
+  padding: 0 .5rem;
+}
+
+.slider2 ol li:hover, .slider2 ol li:focus, .slider2 ol li.active {
+  opacity: 1;
+}
+
+.slider2 ol li:before {
+  content: "\2022";
+}
+/*# sourceMappingURL=style.css.map */
