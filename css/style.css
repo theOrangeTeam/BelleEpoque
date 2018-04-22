@@ -522,9 +522,13 @@ section .relative {
   margin: 80px auto;
 }
 
-@media screen and (max-width: 1024px) {
+#contatti .maps {
+  height: 300px;
+}
+
+@media screen and (min-width: 1280px) {
   #contatti .maps {
-    height: 300px;
+    height: auto;
   }
 }
 

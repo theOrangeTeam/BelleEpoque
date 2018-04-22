@@ -258,10 +258,14 @@ section {
 
 
     .maps{
-        @media screen and (max-width:$tablet-landscape) {
+
+        height: 300px;
+        @media screen and (min-width: $desktop) {
             
-            height: 300px;
+            height: auto;
         }
+
+        
     }
 
 
