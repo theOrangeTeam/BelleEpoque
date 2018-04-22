@@ -300,6 +300,12 @@ hr {
   align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  .brand {
+    margin: 20px 0 40px;
+  }
+}
+
 .brand .row {
   margin: 0;
   padding: 0;
@@ -309,7 +315,8 @@ hr {
   padding: 0;
 }
 
-.brand address, .brand p {
+.brand address,
+.brand p {
   font-family: Baskerville, 'Times New Roman', Times, serif;
   font-style: italic;
   font-size: 1rem;
@@ -321,7 +328,8 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-  .brand address, .brand p {
+  .brand address,
+  .brand p {
     justify-content: center;
     margin: 40px 0;
     font-size: 1.3rem;
@@ -372,7 +380,7 @@ section h2 {
   text-align: center;
   padding: 15px;
   width: 65%;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 
 section p {
@@ -384,16 +392,12 @@ section p {
   line-height: 1.8rem;
 }
 
-section .distanza {
-  margin-bottom: 80px;
-}
-
-section .padd {
+section header {
   margin-top: 50px;
 }
 
 @media screen and (max-width: 600px) {
-  section .padd {
+  section header {
     margin-top: 0;
   }
 }
@@ -417,7 +421,7 @@ section .relative {
 }
 
 #storia {
-  margin: 1080px auto 180px;
+  margin: 900px auto 180px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -432,6 +436,18 @@ section .relative {
   }
 }
 
+@media screen and (max-width: 768px) {
+  #storia {
+    margin: 520px auto 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #storia {
+    margin: 200px auto 100px;
+  }
+}
+
 #storia p {
   font-family: Baskerville, 'Times New Roman', Times, serif;
   font-size: 1.2rem;
@@ -442,7 +458,7 @@ section .relative {
 }
 
 #giornata {
-  margin: 1080px auto 0;
+  margin: 900px auto 0;
   justify-content: space-evenly;
 }
 
@@ -455,6 +471,18 @@ section .relative {
 @media screen and (max-width: 736px) {
   #giornata {
     margin: 250px auto 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #giornata {
+    margin: 520px auto 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #giornata {
+    margin: 200px auto 0px;
   }
 }
 
@@ -496,7 +524,8 @@ section .relative {
   margin: 20px auto 10px;
 }
 
-#contatti span address, #contatti span p {
+#contatti span address,
+#contatti span p {
   font-family: Baskerville, 'Times New Roman', Times, serif;
   font-style: italic;
   font-weight: 300;
@@ -508,7 +537,8 @@ section .relative {
 }
 
 @media screen and (max-width: 600px) {
-  #contatti span address, #contatti span p {
+  #contatti span address,
+  #contatti span p {
     font-size: 1.3rem;
     line-height: 1.6rem;
   }
@@ -791,7 +821,16 @@ footer li a {
   color: #840c1e;
 }
 
-footer li a img {
+footer li a i {
+  font-size: 3.2rem;
+  font-weight: 100;
+}
+
+footer li a i:hover {
+  color: #fffcf1;
+}
+
+footer #wifi {
   height: 50px;
   max-width: 100%;
 }

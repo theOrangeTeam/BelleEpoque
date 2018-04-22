@@ -49,6 +49,9 @@ hr {
 
 .brand {
     margin: 20px 0 80px;
+    @media screen and (max-width: $mobile) {
+        margin: 20px 0 40px;
+    }
     .row {
         margin: 0;
         padding: 0;
@@ -56,7 +59,8 @@ hr {
             padding: 0;
         }
     }
-    address,p {
+    address,
+    p {
         font-family: Baskerville, 'Times New Roman', Times, serif;
         font-style: italic;
         font-size: 1rem;
@@ -71,7 +75,6 @@ hr {
             font-size: 1.3rem;
             line-height: 1.6rem;
         }
-       
     }
     img {
         max-width: 100%;
@@ -90,8 +93,7 @@ section {
         color: $red;
         text-align: center;
         margin-bottom: 20px;
-     
-}
+    }
     hr {
         border: solid rgb(236, 236, 236) 1px;
         width: 15%;
@@ -116,7 +118,7 @@ section {
         text-align: center;
         padding: 15px;
         width: 65%;
-        margin: 0 auto;
+        margin: 20px auto 0;
     }
     p {
         font-family: Baskerville, 'Times New Roman', Times, serif;
@@ -126,14 +128,12 @@ section {
         margin: 45px 0 100px;
         line-height: 1.8rem;
     }
-    .distanza {
-        margin-bottom: 80px;
-    }
-    .padd {
+    
+    header {
         margin-top: 50px;
         @media screen and (max-width: $mobile) {
             margin-top: 0;
-    }
+        }
     }
     .relative {
         position: relative;
@@ -152,16 +152,19 @@ section {
 }
 
 #storia {
-    margin: 1080px auto 180px;
-
-    @media screen and (max-width:$tablet-landscape) {
+    margin: 900px auto 180px;
+    @media screen and (max-width: $tablet-landscape) {
         margin: 660px auto 180px;
     }
     @media screen and (max-width:$mobile-landscape) {
         margin: 250px auto 180px;
     }
-
-
+    @media screen and (max-width: $tablet) {
+        margin: 520px auto 100px;
+    }
+    @media screen and (max-width: $mobile) {
+        margin: 200px auto 100px;
+    }
     p {
         font-family: Baskerville, 'Times New Roman', Times, serif;
         font-size: 1.2rem;
@@ -172,53 +175,29 @@ section {
     }
 }
 
-
 #giornata {
-    margin: 1080px auto 0;
+    margin: 900px auto 0;
     justify-content: space-evenly;
-    
-    @media screen and (max-width:$tablet-landscape) {
+    @media screen and (max-width: $tablet-landscape) {
         margin: 660px auto 0;
     }
-    
-    
-        @media screen and (max-width:$mobile-landscape) {
-            margin: 250px auto 0;
-        }
+    @media screen and (max-width:$mobile-landscape) {
+        margin: 250px auto 0;
+    }
+    @media screen and (max-width: $tablet) {
+        margin: 520px auto 0;
+    }
+    @media screen and (max-width: $mobile) {
+        margin: 200px auto 0px;
+    }
 }
 
-#contatti{
-
-    .row{
-        @media screen and (max-width:$tablet-landscape) {
+#contatti {
+    .row {
+        @media screen and (max-width: $tablet-landscape) {
             justify-content: center;
         }
-
     }
-
-    p{
-        font-family : Gotham, Helvetica, sans-serif;
-        font-weight : bold;
-        font-size : 0.8rem;
-        color : #726860;
-        text-align: center ;
-        margin: 30px 0 0 0;       
-    }
-}
-#contatti {
-
-    :last-child{
-        margin: 0 auto;
-
-        @media screen and (min-width:$desktop){
-
-        :first-child{
-            margin: 0;
-        }
-    }
-    }
-
-
     p {
         font-family: Gotham, Helvetica, sans-serif;
         font-weight: bold;
@@ -226,13 +205,32 @@ section {
         color: #726860;
         text-align: center;
         margin: 30px 0 0 0;
-       
+    }
+}
+
+#contatti {
+    :last-child {
+        margin: 0 auto;
+        @media screen and (min-width: $desktop) {
+            :first-child {
+                margin: 0;
+            }
+        }
+    }
+    p {
+        font-family: Gotham, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 0.8rem;
+        color: #726860;
+        text-align: center;
+        margin: 30px 0 0 0;
     }
     hr {
-        margin:20px auto 10px
+        margin: 20px auto 10px
     }
     span {
-        address,p {
+        address,
+        p {
             font-family: Baskerville, 'Times New Roman', Times, serif;
             font-style: italic;
             font-weight: 300;
@@ -250,31 +248,16 @@ section {
             margin: 80px auto;
         }
     }
-
-
-    header{
-        margin:80px auto;
+    header {
+        margin: 80px auto;
     }
-
-
-    .maps{
-
+    .maps {
         height: 300px;
         @media screen and (min-width: $desktop) {
-            
             height: auto;
         }
-
-        
     }
-
-
-
 }
-
-
-
-
 
 //SLIDER
 .slider {
@@ -289,23 +272,16 @@ section {
         width: 45%;
         left: 18%;
         z-index: 1;
-
-        @media screen and(max-width:$tablet-landscape){
-            
+        @media screen and(max-width: $tablet-landscape) {
             width:90%;
-            top:270px;
-            left:-5%;
+            top: 270px;
+            left: -5%;
         }
-
-
-        @media screen and(max-width:$mobile-landscape){
-            
-            width:90%;
-            top:100px;
-            left:-5%;
+        @media screen and(max-width:$mobile-landscape) {
+            width: 90%;
+            top: 100px;
+            left: -5%;
         }
-
-
     }
     figure {
         height: 896px;
@@ -316,17 +292,13 @@ section {
         opacity: 0;
         transition: all 0.5s ease;
         position: absolute;
-
-        &.active{
+        &.active {
             opacity: 1;
         }
-
-        &.deactive{
+        &.deactive {
             opacity: 0;
         }
-
-        @media screen and(max-width:$tablet-landscape){
-            
+        @media screen and(max-width:$tablet-landscape) {
             height: auto;
         }
     }
@@ -342,18 +314,14 @@ section {
         z-index: 2;
         list-style: disc;
         position: relative;
-
-        @media screen and (max-width:$tablet-landscape){
+        @media screen and (max-width: $tablet-landscape) {
             top:600px;
-
         }
-        @media screen and (max-width:$tablet){
-            top:440px;
-
+        @media screen and (max-width:$tablet) {
+            top: 440px;
         }
-        @media screen and (max-width:$mobile-landscape){
-            top:180px;
-
+        @media screen and (max-width:$mobile-landscape) {
+            top: 180px;
         }
         li {
             cursor: pointer;
@@ -383,23 +351,16 @@ section {
         width: 45%;
         left: 18%;
         z-index: 1;
-
-        @media screen and(max-width:$tablet-landscape){
-            
+        @media screen and(max-width: $tablet-landscape) {
             width:90%;
-            top:270px;
-            left:-5%;
+            top: 270px;
+            left: -5%;
         }
-
-
-        @media screen and(max-width:$mobile-landscape){
-            
-            width:90%;
-            top:100px;
-            left:-5%;
+        @media screen and(max-width:$mobile-landscape) {
+            width: 90%;
+            top: 100px;
+            left: -5%;
         }
-
-
     }
     figure {
         height: 896px;
@@ -410,17 +371,13 @@ section {
         opacity: 0;
         transition: all 0.5s ease;
         position: absolute;
-
-        &.active{
+        &.active {
             opacity: 1;
         }
-
-        &.deactive{
+        &.deactive {
             opacity: 0;
         }
-
-        @media screen and(max-width:$tablet-landscape){
-            
+        @media screen and(max-width:$tablet-landscape) {
             height: auto;
         }
     }
@@ -436,18 +393,14 @@ section {
         z-index: 2;
         list-style: disc;
         position: relative;
-
-        @media screen and (max-width:$tablet-landscape){
+        @media screen and (max-width: $tablet-landscape) {
             top:600px;
-
         }
-        @media screen and (max-width:$tablet){
-            top:440px;
-
+        @media screen and (max-width:$tablet) {
+            top: 440px;
         }
-        @media screen and (max-width:$mobile-landscape){
-            top:180px;
-
+        @media screen and (max-width:$mobile-landscape) {
+            top: 180px;
         }
         li {
             cursor: pointer;
@@ -457,7 +410,6 @@ section {
             font-size: 56px;
             padding: 0 .5rem;
             margin: 0 12px;
-            
             &:hover,
             &:focus,
             &.active {
@@ -505,11 +457,18 @@ footer {
         a {
             text-decoration: none;
             color: $darkred;
-            img {
-                height: 50px;
-                max-width: 100%;
+            i {
+                font-size: 3.2rem;
+                font-weight: 100;
+                &:hover{
+                    color: $bg;
+                }
             }
         }
+    }
+    #wifi {
+        height: 50px;
+        max-width: 100%;
     }
     p {
         font-family: 'Gotham', Helvetica, sans-serif;
