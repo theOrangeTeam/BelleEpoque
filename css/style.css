@@ -241,6 +241,8 @@ html {
   font-size: 15px;
   background-color: #fffcf1;
   margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -268,11 +270,7 @@ nav li {
 
 @media screen and (max-width: 600px) {
   nav li {
-<<<<<<< HEAD
     margin: 20px 8px;
-=======
-    margin: 20px 10px;
->>>>>>> d9ff256987c887eeb90a8f70d7507658b3a0e556
   }
 }
 
@@ -311,7 +309,7 @@ hr {
   padding: 0;
 }
 
-.brand p {
+.brand address, .brand p {
   font-family: Baskerville, 'Times New Roman', Times, serif;
   font-style: italic;
   font-size: 1rem;
@@ -322,19 +320,12 @@ hr {
   display: flex;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 736px) {
-  .brand p {
-    justify-content: center;
-    margin: 32px auto;
-=======
 @media screen and (max-width: 600px) {
-  .brand p {
+  .brand address, .brand p {
     justify-content: center;
     margin: 40px 0;
     font-size: 1.3rem;
     line-height: 1.6rem;
->>>>>>> d9ff256987c887eeb90a8f70d7507658b3a0e556
   }
 }
 
@@ -441,12 +432,6 @@ section .relative {
   }
 }
 
-@media screen and (max-width: 600px) {
-  #storia {
-    margin: 30px 0;
-  }
-}
-
 #storia p {
   font-family: Baskerville, 'Times New Roman', Times, serif;
   font-size: 1.2rem;
@@ -456,36 +441,9 @@ section .relative {
   line-height: 1.8rem;
 }
 
-@media screen and (max-width: 736px) {
-  #storia p {
-    font-size: 1.3rem;
-  }
-}
-
 #giornata {
-<<<<<<< HEAD
   margin: 1080px auto 0;
-  justify-content: space-around;
-=======
-  margin: 180px 0;
   justify-content: space-evenly;
-}
-
-@media screen and (max-width: 600px) {
-  #giornata {
-    margin: 30px 0;
-  }
-}
-
-header {
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 600px) {
-  header {
-    margin-bottom: 0;
-  }
->>>>>>> d9ff256987c887eeb90a8f70d7507658b3a0e556
 }
 
 @media screen and (max-width: 1024px) {
@@ -515,11 +473,30 @@ header {
   margin: 30px 0 0 0;
 }
 
-#contatti hr {
-  margin: 30px auto 50px;
+#contatti :last-child {
+  margin: 0 auto;
 }
 
-#contatti span p {
+@media screen and (min-width: 1280px) {
+  #contatti :last-child :first-child {
+    margin: 0;
+  }
+}
+
+#contatti p {
+  font-family: Gotham, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #726860;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+#contatti hr {
+  margin: 20px auto 10px;
+}
+
+#contatti span address, #contatti span p {
   font-family: Baskerville, 'Times New Roman', Times, serif;
   font-style: italic;
   font-weight: 300;
@@ -531,7 +508,7 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  #contatti span p {
+  #contatti span address, #contatti span p {
     font-size: 1.3rem;
     line-height: 1.6rem;
   }
@@ -541,9 +518,13 @@ header {
   margin: 80px auto;
 }
 
+#contatti header {
+  margin: 80px auto;
+}
+
 @media screen and (max-width: 1024px) {
   #contatti .maps {
-    height: 60%;
+    height: 300px;
   }
 }
 

@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>La Belle Époque</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="slider.js"></script>
+    <meta name="description" content="Un luogo in cui la cortesia e l’altissima qualità dei servizi sono prerogativa essenziale che Di Nardo offre alla sua clientela, grazie ad un personale molto qualificato di circa quaranta dipendenti. "/>
+    <meta name="keywords" content="La Belle Époque Caffè Bar Giugliano in Campania NA Napoli Menu Dolce Salato Colazione Cornetti Alchool Sempre Aperto 24h"/>
+    <script src="slider.js">
+    </script>
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/BarOrPub">
 
     <div class="container">
         <nav>
@@ -28,7 +31,7 @@
                 <img src="svg/stella.svg" alt="">
 
                 <li>
-                    <a href=""> MENU
+                    <a href="#menu"> MENU
                     </a>
                 </li>
 
@@ -45,13 +48,13 @@
 
         <div class="row brand">
 
-            <p class="col s12 m3 l4 ">
+            <address class="col s12 m3 l4 " itemprop="address">
                 Via S. Francesco A Patria, 16,
-                <br> 80014 Giugliano in Campania NA</p>
+                <br> 80014 Giugliano in Campania NA</address>
 
-            <img class="col s3 m4 l4" src="svg/logo.svg" alt="">
+            <img class="col s3 m4 l4" src="svg/logo.svg" alt="Belle Époque Caffè" itemprop="logo">
 
-            <p class="col s12 m3 l4 ">
+            <p class="col s12 m3 l4" itemprop="ethicsPolicy">
                 Noi crediamo nella cordialità, nella cortesia, nei modi, nei sorrisi e nella felicità del nostro cliente.
             </p>
 
@@ -65,20 +68,20 @@
     <section class="slider">
 
         <header>
-            <img src="svg/35anni.png" alt="">
+            <img src="svg/35anni.png" alt="35 anni di Passione">
         </header>
 
         <figure>
-            <img src="images/slide1.jpg" alt="" itemprop="photo">
+            <img src="images/slide1.jpg" alt="Caffè" itemprop="photo">
         </figure>
         <figure>
-            <img src="images/slide2.jpg" alt="" itemprop="photo">
+            <img src="images/slide2.jpg" alt="Cornetti" itemprop="photo">
         </figure>
         <figure>
-            <img src="images/slide3.jpg" alt="" itemprop="photo">
+            <img src="images/slide3.jpg" alt="Caffè Macchiato" itemprop="photo">
         </figure>
         <figure>
-            <img src="images/slide4.jpg" alt="" itemprop="photo">
+            <img src="images/slide4.jpg" alt="Sfogliatelle" itemprop="photo">
         </figure>
         <ol>
             <li></li>
@@ -136,10 +139,10 @@
 
 
         <figure>
-            <img src="images/slide5.jpg" alt="" itemprop="photo">
+            <img src="images/slide5.jpg" alt="zeppole" itemprop="photo">
         </figure>
         <figure>
-            <img src="images/slide6.jpg" alt="" itemprop="photo">
+            <img src="images/slide6.jpg" alt="dolce" itemprop="photo">
         </figure>
         <ol>
             <li></li>
@@ -154,11 +157,11 @@
 
         <section id="giornata" class="row">
 
-            <div class="col s12 m12 l12 ">
+            <header class="col s12 m12 l12 ">
                 <h1>La Giornata</h1>
                 <hr class="distanza">
 
-            </div>
+            </header>
             <div class="col s12 m5 l5">
                 <h2>MATTINA</h2>
                 <p>
@@ -192,39 +195,40 @@
 
 
             </div>
-            <div class="col s12 m12 l12 padd">
+        </section>
+
+        <section class="row" id="menu">
+
+            <header class="col s12 m12 l12 padd">
                 <h1>IL MENU</h1>
                 <hr>
-            </div>
+            </header>
+
             <div class="col s12 m12 l12 menu">
 
-                <a class="relative" href="">Scarica il nostro Menu</a>
+                <a class="relative" href="" itemprop="hasMenu" >Scarica il nostro Menu</a>
                 <img src="SVG/menu.svg" alt="">
             </div>
-
         </section>
 
         <section id="contatti" class="row">
-            
-            <header class="row titolo">
+
+            <header class="col l12 titolo">
                 <h1>Contatti</h1>
                 <hr>
-            </header>  
-            
-            
-            
-            
-            <div class="row">
+            </header>
+
+
             <div class="col s12 m12 l8 maps">
-                <iframe src="https://snazzymaps.com/embed/66026" width="100%" height="100%" style="border:none;"></iframe>
+                <iframe itemprop="hasMap" src="https://snazzymaps.com/embed/66026" width="100%" height="100%" style="border:none;"></iframe>
             </div>
-            
+
             <div class="col s12 m10 l4">
-                
+
                 <p>VIENI A TROVARCI</p>
                 <hr>
                 <span>
-                    <p>
+                    <p itemprop="ethicsPolicy">
                         Noi crediamo nella cordialità, nella cortesia, nei modi, nei sorrisi e nella felicità del nostro cliente. Mettiti comodo,
                         prima di tutto. Prenditi un momento, rilassati, lasciati servire. Affidati alla nostra esperienza,
                         al nostro lavoro che, prima di tutto, è quello di farti stare bene.
@@ -234,18 +238,18 @@
                 <p>INDIRIZZO</p>
                 <hr>
                 <span>
-                    <p> Via S. Francesco A Patria, 16, 80014 Giugliano in Campania NA</p>
+                    <address itemprop="address"> Via S. Francesco A Patria, 16, 80014 Giugliano in Campania NA</address>
                 </span>
 
                 <p>ORARI</p>
                 <hr>
                 <span>
-                    <p> Sempre Aperto!</p>
+                    <p itemprop="openingHours" > Sempre Aperto!</p>
                 </span>
             </div>
 
             </div>
-        </div>
+
         </section>
 
     </article>
@@ -265,8 +269,7 @@
             <img src="svg/dark.svg" alt="">
 
             <li>
-                <a href=""> MENU
-                </a>
+                <a href="#menu"> MENU </a>
             </li>
 
             <img src="svg/dark.svg" alt="">
@@ -278,35 +281,31 @@
 
 
         <ul class="row margi">
-            <li >
+            <li>
                 <a href="">
                     <img class="color" src="svg/fb.svg" alt=""> </a>
-            </li >
-            <li >
+            </li>
+            <li>
                 <a href="">
                     <img class="color" src="svg/in.svg" alt=""> </a>
             </li>
-            <li >
+            <li>
                 <a href="">
                     <img class="color" src="svg/trip.svg" alt=""> </a>
             </li>
 
         </ul>
-        <ul  class="row">
+        <ul class="row">
             <li class="margi">
-                <a href="">
-                    <img src="svg/wifi.svg" alt=""> </a>
+
+                <img src="svg/wifi.svg" alt="">
             </li>
         </ul>
         <div class="row">
             <div class="col l12">
-                    <p>© 2018 COPYRIGHT · A LA BELLE EPOQUE CAFE. </p>
+                <p>© 2018 COPYRIGHT · A LA BELLE EPOQUE CAFE. </p>
             </div>
-       </div>
-
-
-
-
+        </div>
 
 
     </footer>

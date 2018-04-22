@@ -2,6 +2,8 @@ html {
     font-size: 15px;
     background-color: $bg;
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -23,7 +25,7 @@ nav {
         list-style: none;
         margin: 20px;
         @media screen and (max-width: $mobile) {
-            margin: 20px 10px;
+            margin: 20px 8px;
         }
         a {
             text-decoration: none;
@@ -54,7 +56,7 @@ hr {
             padding: 0;
         }
     }
-    p {
+    address,p {
         font-family: Baskerville, 'Times New Roman', Times, serif;
         font-style: italic;
         font-size: 1rem;
@@ -204,6 +206,19 @@ section {
     }
 }
 #contatti {
+
+    :last-child{
+        margin: 0 auto;
+
+        @media screen and (min-width:$desktop){
+
+        :first-child{
+            margin: 0;
+        }
+    }
+    }
+
+
     p {
         font-family: Gotham, Helvetica, sans-serif;
         font-weight: bold;
@@ -211,12 +226,13 @@ section {
         color: #726860;
         text-align: center;
         margin: 30px 0 0 0;
+       
     }
     hr {
-        margin:30px auto 50px
+        margin:20px auto 10px
     }
     span {
-        p {
+        address,p {
             font-family: Baskerville, 'Times New Roman', Times, serif;
             font-style: italic;
             font-weight: 300;
@@ -244,7 +260,7 @@ section {
     .maps{
         @media screen and (max-width:$tablet-landscape) {
             
-            height: 60%;
+            height: 300px;
         }
     }
 
