@@ -266,6 +266,12 @@ nav li {
   margin: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  nav li {
+    margin: 20px 8px;
+  }
+}
+
 nav li a {
   text-decoration: none;
   color: #726860;
@@ -305,6 +311,13 @@ nav .row {
   color: #B6B2AD;
   margin: 0;
   display: flex;
+}
+
+@media screen and (max-width: 736px) {
+  .brand p {
+    justify-content: center;
+    margin: 32px auto;
+  }
 }
 
 .brand img {
@@ -361,7 +374,19 @@ section .relative {
 }
 
 #storia {
-  margin: 180px auto;
+  margin: 1080px auto 180px;
+}
+
+@media screen and (max-width: 1024px) {
+  #storia {
+    margin: 660px auto 180px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #storia {
+    margin: 250px auto 180px;
+  }
 }
 
 #storia p {
@@ -372,9 +397,33 @@ section .relative {
   margin: 20px 0;
 }
 
+@media screen and (max-width: 736px) {
+  #storia p {
+    font-size: 1.3rem;
+  }
+}
+
 #giornata {
-  margin: 180px 0;
+  margin: 1080px auto 0;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px) {
+  #giornata {
+    margin: 660px auto 0;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #giornata {
+    margin: 250px auto 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #contatti .row {
+    justify-content: center;
+  }
 }
 
 #contatti p {
@@ -408,10 +457,16 @@ section .relative {
   margin: 80px auto;
 }
 
+@media screen and (max-width: 1024px) {
+  #contatti .maps {
+    height: 60%;
+  }
+}
+
 .slider {
   position: relative;
   width: 100%;
-  transition: all .3s ease;
+  transition: all .5s ease;
 }
 
 .slider header {
@@ -421,6 +476,23 @@ section .relative {
   color: #fff;
   width: 45%;
   left: 18%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider header {
+    width: 90%;
+    top: 270px;
+    left: -5%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .slider header {
+    width: 90%;
+    top: 100px;
+    left: -5%;
+  }
 }
 
 .slider figure {
@@ -429,6 +501,23 @@ section .relative {
   display: flex;
   align-items: center;
   margin: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  position: absolute;
+}
+
+.slider figure.active {
+  opacity: 1;
+}
+
+.slider figure.deactive {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider figure {
+    height: auto;
+  }
 }
 
 .slider img {
@@ -437,12 +526,31 @@ section .relative {
 
 .slider ol {
   position: absolute;
-  bottom: 0;
+  top: 800px;
   display: flex;
   justify-content: center;
   width: 100%;
   z-index: 2;
   list-style: disc;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider ol {
+    top: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider ol {
+    top: 440px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .slider ol {
+    top: 180px;
+  }
 }
 
 .slider ol li {
@@ -462,7 +570,33 @@ section .relative {
 .slider2 {
   position: relative;
   width: 100%;
-  transition: all .3s ease;
+  transition: all .5s ease;
+}
+
+.slider2 header {
+  position: absolute;
+  padding: 0 10%;
+  top: 350px;
+  color: #fff;
+  width: 45%;
+  left: 18%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider2 header {
+    width: 90%;
+    top: 270px;
+    left: -5%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .slider2 header {
+    width: 90%;
+    top: 100px;
+    left: -5%;
+  }
 }
 
 .slider2 figure {
@@ -471,6 +605,23 @@ section .relative {
   display: flex;
   align-items: center;
   margin: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  position: absolute;
+}
+
+.slider2 figure.active {
+  opacity: 1;
+}
+
+.slider2 figure.deactive {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider2 figure {
+    height: auto;
+  }
 }
 
 .slider2 img {
@@ -479,12 +630,31 @@ section .relative {
 
 .slider2 ol {
   position: absolute;
-  bottom: 0;
+  top: 800px;
   display: flex;
   justify-content: center;
   width: 100%;
   z-index: 2;
   list-style: disc;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider2 ol {
+    top: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider2 ol {
+    top: 440px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .slider2 ol {
+    top: 180px;
+  }
 }
 
 .slider2 ol li {
