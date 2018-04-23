@@ -120,6 +120,9 @@ section {
         padding: 15px;
         width: 65%;
         margin: 20px auto 0;
+        @media screen and (max-width: 1410px) {
+            font-size: 17px;
+        }
     }
     p {
         font-family: Baskerville, 'Times New Roman', Times, serif;
@@ -128,6 +131,7 @@ section {
         text-align: center;
         margin: 45px 0 100px;
         line-height: 1.8rem;
+       
     }
     
     header {
