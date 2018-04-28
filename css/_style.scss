@@ -11,6 +11,11 @@ body {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: Aerioz;
+    src: url('../font/Aerioz.ttf') format('truetype');
+}
+
 //NAVBAR
 nav {
     ul {
@@ -104,6 +109,9 @@ section {
         }
     }
     .menu {
+
+        font-family: Aerioz;
+
         @media screen and (max-width: $mobile) {
             margin-top: -50px;
             margin-bottom: 30px;
@@ -148,10 +156,16 @@ section {
         text-decoration: none;
         justify-content: center;
         color: $red;
-        font-size: 3rem;
+        font-size: 6rem;
         text-align: center;
+
+              
+        @media screen and (min-width: $tablet-landscape){
+        line-height: 0;}
+       
+
         @media screen and (max-width: $mobile) {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
         }
     }
 }
@@ -452,7 +466,8 @@ footer {
         font-weight: 600;
         list-style: none;
         margin: 20px;
-        
+
+    
         @media screen and (max-width: $mobile) {
             margin: 10px;
 
@@ -464,14 +479,14 @@ footer {
             text-decoration: none;
             color: $darkred;
             transition: .3s all;
+            &:hover{
+                color: $bg;}
        
             i {
                 font-size: 3.2rem;
                 font-weight: 100;
-                transition: .3s all;
-                &:hover{
-                    color: $bg;
-                }
+
+             
             }
         }
     }
