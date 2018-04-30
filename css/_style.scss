@@ -55,7 +55,7 @@ hr {
 
 .brand {
     margin: 20px 0 80px;
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $mobile-landscape) {
         margin: 20px 0 40px;
     }
     .row {
@@ -75,7 +75,7 @@ hr {
         color: #B6B2AD;
         margin: 0;
         display: flex;
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: $mobile-landscape) {
             justify-content: center;
             margin: 40px 0;
             font-size: 1.3rem;
