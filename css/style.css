@@ -430,7 +430,7 @@ section .relative {
   text-align: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1330px) {
   section .relative {
     line-height: 0;
   }
