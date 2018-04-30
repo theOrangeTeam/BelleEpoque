@@ -150,7 +150,7 @@ section {
     }
     .relative {
         position: relative;
-        top: 50%;
+        bottom: 50%;
         margin: 0;
         display: flex;
         text-decoration: none;
@@ -160,8 +160,7 @@ section {
         text-align: center;
 
               
-        @media screen and (min-width: 1330px){
-        line-height: 0;}
+       
        
 
         @media screen and (max-width: $mobile) {
