@@ -75,7 +75,7 @@
   flex: 1 0 100%;
 }
 
-@media screen and (min-width: 736px) {
+@media screen and (max-width: 767px) {
   .row .col.sl1 {
     flex: 0 1 8.33333%;
   }
@@ -306,7 +306,7 @@ hr {
   align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .brand {
     margin: 20px 0 40px;
   }
@@ -333,7 +333,7 @@ hr {
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .brand address,
   .brand p {
     justify-content: center;
@@ -445,7 +445,7 @@ section .relative {
   }
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 767px) {
   #storia {
     margin: 250px auto 180px;
   }
@@ -483,7 +483,7 @@ section .relative {
   }
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 767px) {
   #giornata {
     margin: 250px auto 0;
   }
@@ -601,7 +601,7 @@ section .relative {
   }
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 767px) {
   .slider header {
     width: 90%;
     top: 100px;
@@ -661,7 +661,7 @@ section .relative {
   }
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 767px) {
   .slider ol {
     top: 180px;
   }
@@ -705,7 +705,7 @@ section .relative {
   }
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 767px) {
   .slider2 header {
     width: 90%;
     top: 100px;
@@ -765,7 +765,7 @@ section .relative {
   }
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 767px) {
   .slider2 ol {
     top: 180px;
   }
